@@ -17,7 +17,7 @@ public class CsvFileBuilder : ICsvFileBuilder
         {
             using var csvWriter = new CsvWriter(streamWriter, CultureInfo.InvariantCulture);
 
-            csvWriter.Configuration.RegisterClassMap<TodoItemRecordMap>();
+            //csvWriter.Configuration.RegisterClassMap<TodoItemRecordMap>();
             csvWriter.WriteRecords(records);
         }
 

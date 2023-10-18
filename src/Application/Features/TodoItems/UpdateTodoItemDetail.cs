@@ -45,7 +45,7 @@ internal sealed class UpdateTodoItemDetailCommandHandler : IRequestHandler<Updat
         _context = context;
     }
 
-    public async Task<Unit> Handle(UpdateTodoItemDetailCommand request, CancellationToken cancellationToken)
+    async Task IRequestHandler<UpdateTodoItemDetailCommand>.Handle(UpdateTodoItemDetailCommand request, CancellationToken cancellationToken)
     {
         var entity = await _context.TodoItems
             .FindAsync(new object[] { request.Id }, cancellationToken);
@@ -60,7 +60,5 @@ internal sealed class UpdateTodoItemDetailCommandHandler : IRequestHandler<Updat
         entity.Note = request.Note;
 
         await _context.SaveChangesAsync(cancellationToken);
-
-        return Unit.Value;
     }
 }

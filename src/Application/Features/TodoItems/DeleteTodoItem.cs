@@ -34,7 +34,7 @@ internal sealed class DeleteTodoItemCommandHandler : IRequestHandler<DeleteTodoI
         _context = context;
     }
 
-    public async Task<Unit> Handle(DeleteTodoItemCommand request, CancellationToken cancellationToken)
+    async Task IRequestHandler<DeleteTodoItemCommand>.Handle(DeleteTodoItemCommand request, CancellationToken cancellationToken)
     {
         var entity = await _context.TodoItems
             .FindAsync(new object[] { request.Id }, cancellationToken);
@@ -49,8 +49,6 @@ internal sealed class DeleteTodoItemCommandHandler : IRequestHandler<DeleteTodoI
         entity.DomainEvents.Add(new TodoItemDeletedEvent(entity));
 
         await _context.SaveChangesAsync(cancellationToken);
-
-        return Unit.Value;
     }
 }
 

@@ -3,11 +3,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-using VerticalSliceArchitecture.Application.Common;
-using VerticalSliceArchitecture.Application.Common.Interfaces;
-using VerticalSliceArchitecture.Application.Entities;
+using Sirus.Application.Common;
+using Sirus.Application.Common.Interfaces;
+using Sirus.Application.Entities;
 
-namespace VerticalSliceArchitecture.Application.Infrastructure.Persistence;
+namespace Sirus.Application.Infrastructure.Persistence;
 
 public class ApplicationDbContext : DbContext
 {

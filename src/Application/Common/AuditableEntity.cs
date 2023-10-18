@@ -1,4 +1,4 @@
-﻿namespace VerticalSliceArchitecture.Application.Common;
+﻿namespace Sirus.Application.Common;
 
 public abstract class AuditableEntity
 {

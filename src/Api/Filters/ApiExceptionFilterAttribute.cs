@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-using VerticalSliceArchitecture.Application.Common.Exceptions;
+using Sirus.Application.Common.Exceptions;
 
-namespace VerticalSliceArchitecture.Api.Filters;
+namespace Sirus.Api.Filters;
 
 public class ApiExceptionFilterAttribute : ExceptionFilterAttribute
 {

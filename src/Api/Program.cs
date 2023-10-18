@@ -1,6 +1,6 @@
 using Microsoft.OpenApi.Models;
 
-using VerticalSliceArchitecture.Application;
+using Sirus.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
-        <RootNamespace>VerticalSliceArchitecture.Application.IntegrationTests</RootNamespace>
-        <AssemblyName>VerticalSliceArchitecture.Application.IntegrationTests</AssemblyName>
+        <RootNamespace>Sirus.Application.IntegrationTests</RootNamespace>
+        <AssemblyName>Sirus.Application.IntegrationTests</AssemblyName>
 
         <IsPackable>false</IsPackable>
         <ImplicitUsings>enable</ImplicitUsings>

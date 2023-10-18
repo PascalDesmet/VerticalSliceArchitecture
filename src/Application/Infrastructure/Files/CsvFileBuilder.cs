@@ -2,11 +2,11 @@
 
 using CsvHelper;
 
-using VerticalSliceArchitecture.Application.Common.Interfaces;
-using VerticalSliceArchitecture.Application.Features.TodoLists;
-using VerticalSliceArchitecture.Application.Infrastructure.Files.Maps;
+using Sirus.Application.Common.Interfaces;
+using Sirus.Application.Features.TodoLists;
+using Sirus.Application.Infrastructure.Files.Maps;
 
-namespace VerticalSliceArchitecture.Application.Infrastructure.Files;
+namespace Sirus.Application.Infrastructure.Files;
 
 public class CsvFileBuilder : ICsvFileBuilder
 {

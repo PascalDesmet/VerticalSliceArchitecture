@@ -3,9 +3,9 @@ using AutoMapper.QueryableExtensions;
 
 using Microsoft.EntityFrameworkCore;
 
-using VerticalSliceArchitecture.Application.Common.Models;
+using Sirus.Application.Common.Models;
 
-namespace VerticalSliceArchitecture.Application.Common.Mappings;
+namespace Sirus.Application.Common.Mappings;
 
 public static class MappingExtensions
 {

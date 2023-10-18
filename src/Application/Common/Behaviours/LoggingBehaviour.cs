@@ -2,9 +2,9 @@
 
 using Microsoft.Extensions.Logging;
 
-using VerticalSliceArchitecture.Application.Common.Interfaces;
+using Sirus.Application.Common.Interfaces;
 
-namespace VerticalSliceArchitecture.Application.Common.Behaviours;
+namespace Sirus.Application.Common.Behaviours;
 
 public class LoggingBehaviour<TRequest> : IRequestPreProcessor<TRequest> where TRequest : notnull
 {

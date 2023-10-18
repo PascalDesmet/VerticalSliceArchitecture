@@ -11,11 +11,11 @@ using NUnit.Framework;
 
 using Respawn;
 
-using VerticalSliceArchitecture.Api;
-using VerticalSliceArchitecture.Application.Common.Interfaces;
-using VerticalSliceArchitecture.Application.Infrastructure.Persistence;
+using Sirus.Api;
+using Sirus.Application.Common.Interfaces;
+using Sirus.Application.Infrastructure.Persistence;
 
-namespace VerticalSliceArchitecture.Application.IntegrationTests;
+namespace Sirus.Application.IntegrationTests;
 
 [SetUpFixture]
 public class Testing
@@ -41,7 +41,7 @@ public class Testing
 
         services.AddSingleton(Mock.Of<IWebHostEnvironment>(w =>
             w.EnvironmentName == "Development" &&
-            w.ApplicationName == "VerticalSliceArchitecture.Api"));
+            w.ApplicationName == "Sirus.Api"));
 
         services.AddLogging();
 

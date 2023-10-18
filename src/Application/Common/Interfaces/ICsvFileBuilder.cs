@@ -1,6 +1,6 @@
-﻿using VerticalSliceArchitecture.Application.Features.TodoLists;
+﻿using Sirus.Application.Features.TodoLists;
 
-namespace VerticalSliceArchitecture.Application.Common.Interfaces;
+namespace Sirus.Application.Common.Interfaces;
 
 public interface ICsvFileBuilder
 {

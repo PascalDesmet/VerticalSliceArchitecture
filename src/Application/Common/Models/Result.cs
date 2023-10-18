@@ -1,4 +1,4 @@
-﻿namespace VerticalSliceArchitecture.Application.Common.Models;
+﻿namespace Sirus.Application.Common.Models;
 
 public class Result
 {

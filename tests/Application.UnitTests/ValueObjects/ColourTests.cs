@@ -2,10 +2,10 @@
 
 using NUnit.Framework;
 
-using VerticalSliceArchitecture.Application.Common.Exceptions;
-using VerticalSliceArchitecture.Application.ValueObjects;
+using Sirus.Application.Common.Exceptions;
+using Sirus.Application.ValueObjects;
 
-namespace VerticalSliceArchitecture.Application.UnitTests.ValueObjects;
+namespace Sirus.Application.UnitTests.ValueObjects;
 
 public class ColourTests
 {

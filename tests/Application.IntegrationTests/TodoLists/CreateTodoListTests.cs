@@ -1,10 +1,10 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
-using VerticalSliceArchitecture.Application.Common.Exceptions;
-using VerticalSliceArchitecture.Application.Entities;
-using VerticalSliceArchitecture.Application.Features.TodoLists;
+using Sirus.Application.Common.Exceptions;
+using Sirus.Application.Entities;
+using Sirus.Application.Features.TodoLists;
 
-namespace VerticalSliceArchitecture.Application.IntegrationTests.TodoLists;
+namespace Sirus.Application.IntegrationTests.TodoLists;
 
 using static Testing;
 

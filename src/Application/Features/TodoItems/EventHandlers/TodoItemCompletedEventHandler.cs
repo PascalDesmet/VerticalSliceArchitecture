@@ -2,10 +2,10 @@
 
 using Microsoft.Extensions.Logging;
 
-using VerticalSliceArchitecture.Application.Common.Models;
-using VerticalSliceArchitecture.Application.Entities;
+using Sirus.Application.Common.Models;
+using Sirus.Application.Entities;
 
-namespace VerticalSliceArchitecture.Application.Features.TodoItems.EventHandlers;
+namespace Sirus.Application.Features.TodoItems.EventHandlers;
 
 public class TodoItemCompletedEventHandler : INotificationHandler<DomainEventNotification<TodoItemCompletedEvent>>
 {

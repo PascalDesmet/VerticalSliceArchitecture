@@ -1,6 +1,6 @@
-﻿using VerticalSliceArchitecture.Application.Common.Interfaces;
+﻿using Sirus.Application.Common.Interfaces;
 
-namespace VerticalSliceArchitecture.Application.Infrastructure.Services;
+namespace Sirus.Application.Infrastructure.Services;
 
 public class DateTimeService : IDateTime
 {

@@ -1,11 +1,11 @@
 ﻿using System.Runtime.Serialization;
 using AutoMapper;
-using VerticalSliceArchitecture.Application.Common.Mappings;
+using Sirus.Application.Common.Mappings;
 using NUnit.Framework;
-using VerticalSliceArchitecture.Application.Entities;
-using VerticalSliceArchitecture.Application.Features.TodoLists;
+using Sirus.Application.Entities;
+using Sirus.Application.Features.TodoLists;
 
-namespace VerticalSliceArchitecture.Application.UnitTests.Common.Mappings;
+namespace Sirus.Application.UnitTests.Common.Mappings;
 
 public class MappingTests
 {

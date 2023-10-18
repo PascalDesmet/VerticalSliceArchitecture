@@ -2,11 +2,11 @@
 
 using Microsoft.Extensions.Logging;
 
-using VerticalSliceArchitecture.Application.Common;
-using VerticalSliceArchitecture.Application.Common.Interfaces;
-using VerticalSliceArchitecture.Application.Common.Models;
+using Sirus.Application.Common;
+using Sirus.Application.Common.Interfaces;
+using Sirus.Application.Common.Models;
 
-namespace VerticalSliceArchitecture.Application.Infrastructure.Services;
+namespace Sirus.Application.Infrastructure.Services;
 
 public class DomainEventService : IDomainEventService
 {

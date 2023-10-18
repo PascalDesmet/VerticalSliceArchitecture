@@ -2,9 +2,9 @@
 
 using CsvHelper.Configuration;
 
-using VerticalSliceArchitecture.Application.Features.TodoLists;
+using Sirus.Application.Features.TodoLists;
 
-namespace VerticalSliceArchitecture.Application.Infrastructure.Files.Maps;
+namespace Sirus.Application.Infrastructure.Files.Maps;
 
 public class TodoItemRecordMap : ClassMap<TodoItemRecord>
 {

@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using VerticalSliceArchitecture.Application.Common.Behaviours;
-using VerticalSliceArchitecture.Application.Common.Interfaces;
-using VerticalSliceArchitecture.Application.Infrastructure.Files;
-using VerticalSliceArchitecture.Application.Infrastructure.Persistence;
-using VerticalSliceArchitecture.Application.Infrastructure.Services;
+using Sirus.Application.Common.Behaviours;
+using Sirus.Application.Common.Interfaces;
+using Sirus.Application.Infrastructure.Files;
+using Sirus.Application.Infrastructure.Persistence;
+using Sirus.Application.Infrastructure.Services;
 
-namespace VerticalSliceArchitecture.Application;
+namespace Sirus.Application;
 
 public static class DependencyInjection
 {

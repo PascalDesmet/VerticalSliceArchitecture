@@ -2,14 +2,14 @@
 
 using NUnit.Framework;
 
-using VerticalSliceArchitecture.Application.Common.Exceptions;
-using VerticalSliceArchitecture.Application.Entities;
-using VerticalSliceArchitecture.Application.Features.TodoItems;
-using VerticalSliceArchitecture.Application.Features.TodoLists;
+using Sirus.Application.Common.Exceptions;
+using Sirus.Application.Entities;
+using Sirus.Application.Features.TodoItems;
+using Sirus.Application.Features.TodoLists;
 
-using static VerticalSliceArchitecture.Application.IntegrationTests.Testing;
+using static Sirus.Application.IntegrationTests.Testing;
 
-namespace VerticalSliceArchitecture.Application.IntegrationTests.TodoItems;
+namespace Sirus.Application.IntegrationTests.TodoItems;
 public class CreateTodoItemTests : TestBase
 {
     [Test]

@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Results;
 
-namespace VerticalSliceArchitecture.Application.Common.Exceptions;
+namespace Sirus.Application.Common.Exceptions;
 
 public class ValidationException : Exception
 {

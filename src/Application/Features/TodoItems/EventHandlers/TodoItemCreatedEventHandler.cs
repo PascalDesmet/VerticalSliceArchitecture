@@ -2,9 +2,9 @@
 
 using Microsoft.Extensions.Logging;
 
-using VerticalSliceArchitecture.Application.Common.Models;
+using Sirus.Application.Common.Models;
 
-namespace VerticalSliceArchitecture.Application.Features.TodoItems.EventHandlers;
+namespace Sirus.Application.Features.TodoItems.EventHandlers;
 
 public class TodoItemCreatedEventHandler : INotificationHandler<DomainEventNotification<TodoItemCreatedEvent>>
 {

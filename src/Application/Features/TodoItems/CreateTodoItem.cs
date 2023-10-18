@@ -4,11 +4,11 @@ using MediatR;
 
 using Microsoft.AspNetCore.Mvc;
 
-using VerticalSliceArchitecture.Application.Common;
-using VerticalSliceArchitecture.Application.Entities;
-using VerticalSliceArchitecture.Application.Infrastructure.Persistence;
+using Sirus.Application.Common;
+using Sirus.Application.Entities;
+using Sirus.Application.Infrastructure.Persistence;
 
-namespace VerticalSliceArchitecture.Application.Features.TodoItems;
+namespace Sirus.Application.Features.TodoItems;
 
 public class CreateTodoItemController : ApiControllerBase
 {

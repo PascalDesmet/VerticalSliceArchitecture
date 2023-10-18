@@ -2,13 +2,13 @@
 
 using NUnit.Framework;
 
-using VerticalSliceArchitecture.Application.Entities;
-using VerticalSliceArchitecture.Application.Features.TodoLists;
-using VerticalSliceArchitecture.Application.ValueObjects;
+using Sirus.Application.Entities;
+using Sirus.Application.Features.TodoLists;
+using Sirus.Application.ValueObjects;
 
-using static VerticalSliceArchitecture.Application.IntegrationTests.Testing;
+using static Sirus.Application.IntegrationTests.Testing;
 
-namespace VerticalSliceArchitecture.Application.IntegrationTests.TodoLists;
+namespace Sirus.Application.IntegrationTests.TodoLists;
 public class GetTodosTests : TestBase
 {
     [Test]

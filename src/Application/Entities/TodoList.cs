@@ -1,7 +1,7 @@
-﻿using VerticalSliceArchitecture.Application.Common;
-using VerticalSliceArchitecture.Application.ValueObjects;
+﻿using Sirus.Application.Common;
+using Sirus.Application.ValueObjects;
 
-namespace VerticalSliceArchitecture.Application.Entities;
+namespace Sirus.Application.Entities;
 
 public class TodoList : AuditableEntity
 {

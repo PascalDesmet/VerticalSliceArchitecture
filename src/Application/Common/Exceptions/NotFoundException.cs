@@ -1,4 +1,4 @@
-﻿namespace VerticalSliceArchitecture.Application.Common.Exceptions;
+﻿namespace Sirus.Application.Common.Exceptions;
 
 public class NotFoundException : Exception
 {

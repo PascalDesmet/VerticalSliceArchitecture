@@ -1,11 +1,11 @@
-﻿using VerticalSliceArchitecture.Application.Common.Behaviours;
-using VerticalSliceArchitecture.Application.Common.Interfaces;
+﻿using Sirus.Application.Common.Behaviours;
+using Sirus.Application.Common.Interfaces;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
-using VerticalSliceArchitecture.Application.Features.TodoItems;
+using Sirus.Application.Features.TodoItems;
 
-namespace VerticalSliceArchitecture.Application.UnitTests.Common.Behaviours;
+namespace Sirus.Application.UnitTests.Common.Behaviours;
 
 public class RequestLoggerTests
 {

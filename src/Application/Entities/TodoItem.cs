@@ -1,6 +1,6 @@
-﻿using VerticalSliceArchitecture.Application.Common;
+﻿using Sirus.Application.Common;
 
-namespace VerticalSliceArchitecture.Application.Entities;
+namespace Sirus.Application.Entities;
 
 public class TodoItem : AuditableEntity, IHasDomainEvent
 {

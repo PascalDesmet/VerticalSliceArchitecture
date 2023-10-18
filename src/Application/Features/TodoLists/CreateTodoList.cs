@@ -5,11 +5,11 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-using VerticalSliceArchitecture.Application.Common;
-using VerticalSliceArchitecture.Application.Entities;
-using VerticalSliceArchitecture.Application.Infrastructure.Persistence;
+using Sirus.Application.Common;
+using Sirus.Application.Entities;
+using Sirus.Application.Infrastructure.Persistence;
 
-namespace VerticalSliceArchitecture.Application.Features.TodoLists;
+namespace Sirus.Application.Features.TodoLists;
 
 public class CreateTodoListController : ApiControllerBase
 {

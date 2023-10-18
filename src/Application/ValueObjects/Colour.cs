@@ -1,7 +1,7 @@
-﻿using VerticalSliceArchitecture.Application.Common;
-using VerticalSliceArchitecture.Application.Common.Exceptions;
+﻿using Sirus.Application.Common;
+using Sirus.Application.Common.Exceptions;
 
-namespace VerticalSliceArchitecture.Application.ValueObjects;
+namespace Sirus.Application.ValueObjects;
 
 public class Colour : ValueObject
 {

@@ -1,4 +1,4 @@
-﻿namespace VerticalSliceArchitecture.Application.Common.Interfaces;
+﻿namespace Sirus.Application.Common.Interfaces;
 
 public interface ICurrentUserService
 {

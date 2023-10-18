@@ -1,7 +1,7 @@
-﻿using VerticalSliceArchitecture.Application.Entities;
-using VerticalSliceArchitecture.Application.ValueObjects;
+﻿using Sirus.Application.Entities;
+using Sirus.Application.ValueObjects;
 
-namespace VerticalSliceArchitecture.Application.Infrastructure.Persistence;
+namespace Sirus.Application.Infrastructure.Persistence;
 
 public static class ApplicationDbContextSeed
 {

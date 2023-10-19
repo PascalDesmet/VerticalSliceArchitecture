@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Sirus.Application.Common;
 using Sirus.Application.Common.Exceptions;
 using Sirus.Application.Entities;
-using Sirus.Application.Infrastructure.Persistence;
+using Sirus.Application.Infrastructure.Database;
 
 namespace Sirus.Application.Features.TodoItems;
 
@@ -48,13 +48,7 @@ internal sealed class UpdateTodoItemDetailCommandHandler : IRequestHandler<Updat
     async Task IRequestHandler<UpdateTodoItemDetailCommand>.Handle(UpdateTodoItemDetailCommand request, CancellationToken cancellationToken)
     {
         var entity = await _context.TodoItems
-            .FindAsync(new object[] { request.Id }, cancellationToken);
-
-        if (entity == null)
-        {
-            throw new NotFoundException(nameof(TodoItem), request.Id);
-        }
-
+            .FindAsync(new object[] { request.Id }, cancellationToken) ?? throw new NotFoundException(nameof(TodoItem), request.Id);
         entity.ListId = request.ListId;
         entity.Priority = request.Priority;
         entity.Note = request.Note;

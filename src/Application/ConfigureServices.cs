@@ -4,15 +4,14 @@ using FluentValidation;
 
 using MediatR;
 
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using Sirus.Application.Common.Behaviours;
 using Sirus.Application.Common.Interfaces;
+using Sirus.Application.Infrastructure.Database;
 using Sirus.Application.Infrastructure.Files;
-using Sirus.Application.Infrastructure.Persistence;
 using Sirus.Application.Infrastructure.Services;
 
 namespace Sirus.Application;

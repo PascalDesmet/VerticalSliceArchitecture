@@ -4,7 +4,6 @@ using CsvHelper;
 
 using Sirus.Application.Common.Interfaces;
 using Sirus.Application.Features.TodoLists;
-using Sirus.Application.Infrastructure.Files.Maps;
 
 namespace Sirus.Application.Infrastructure.Files;
 

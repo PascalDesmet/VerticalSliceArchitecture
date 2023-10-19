@@ -3,14 +3,15 @@
 using Microsoft.Extensions.Logging;
 
 using Sirus.Application.Common.Models;
+using Sirus.Application.Features.Feature.EventHandlers;
 
 namespace Sirus.Application.Features.TodoItems.EventHandlers;
 
 public class TodoItemCreatedEventHandler : INotificationHandler<DomainEventNotification<TodoItemCreatedEvent>>
 {
-    private readonly ILogger<TodoItemCreatedEventHandler> _logger;
+    private readonly ILogger<FeatureCreatedEventHandler> _logger;
 
-    public TodoItemCreatedEventHandler(ILogger<TodoItemCreatedEventHandler> logger)
+    public TodoItemCreatedEventHandler(ILogger<FeatureCreatedEventHandler> logger)
     {
         _logger = logger;
     }

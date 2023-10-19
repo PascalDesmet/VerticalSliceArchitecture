@@ -10,7 +10,7 @@ using Sirus.Application.Common;
 using Sirus.Application.Common.Interfaces;
 using Sirus.Application.Common.Mappings;
 using Sirus.Application.Entities;
-using Sirus.Application.Infrastructure.Persistence;
+using Sirus.Application.Infrastructure.Database;
 
 namespace Sirus.Application.Features.TodoLists;
 

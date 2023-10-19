@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Sirus.Application.Common;
 using Sirus.Application.Common.Exceptions;
 using Sirus.Application.Entities;
-using Sirus.Application.Infrastructure.Persistence;
+using Sirus.Application.Infrastructure.Database;
 
 namespace Sirus.Application.Features.TodoLists;
 
@@ -70,13 +70,7 @@ internal sealed class UpdateTodoListCommandHandler : IRequestHandler<UpdateTodoL
     {
         var entity = await _context.TodoLists
             .FindAsync(new object[] { request.Id }, cancellationToken)
-            .ConfigureAwait(false);
-
-        if (entity == null)
-        {
-            throw new NotFoundException(nameof(TodoList), request.Id);
-        }
-
+            .ConfigureAwait(false) ?? throw new NotFoundException(nameof(TodoList), request.Id);
         entity.Title = request.Title;
 
         await _context.SaveChangesAsync(cancellationToken);

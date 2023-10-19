@@ -180,3 +180,8 @@ dotnet format
 ## License
 
 This project is licensed with the [MIT license](./LICENSE).
+
+## Author and owner
+[Nadir Badnjevic](https://github.com/nadirbad)
+
+[github](https://github.com/nadirbad/VerticalSliceArchitecture)

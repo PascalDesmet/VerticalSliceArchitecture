@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 using Sirus.Application.Entities;
 
-namespace Sirus.Application.Infrastructure.Persistence.Configurations;
+namespace Sirus.Application.Infrastructure.Database.Configurations;
 
 public class TodoListConfiguration : IEntityTypeConfiguration<TodoList>
 {

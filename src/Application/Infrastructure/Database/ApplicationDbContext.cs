@@ -1,13 +1,12 @@
 ﻿using System.Reflection;
 
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 using Sirus.Application.Common;
 using Sirus.Application.Common.Interfaces;
 using Sirus.Application.Entities;
 
-namespace Sirus.Application.Infrastructure.Persistence;
+namespace Sirus.Application.Infrastructure.Database;
 
 public class ApplicationDbContext : DbContext
 {

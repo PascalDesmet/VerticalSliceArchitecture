@@ -1,22 +1,21 @@
 ﻿using System.Reflection;
 
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 using Sirus.Application.Common;
 using Sirus.Application.Common.Interfaces;
 using Sirus.Application.Entities;
 
-namespace Sirus.Application.Infrastructure.Persistence;
+namespace Sirus.Application.Infrastructure.Database;
 
-public class ApplicationDbContext : DbContext
+public class FeatureDbContext : DbContext
 {
     private readonly ICurrentUserService _currentUserService;
     private readonly IDateTime _dateTime;
     private readonly IDomainEventService _domainEventService;
 
-    public ApplicationDbContext(
-        DbContextOptions<ApplicationDbContext> options,
+    public FeatureDbContext(
+        DbContextOptions<FeatureDbContext> options,
         ICurrentUserService currentUserService,
         IDomainEventService domainEventService,
         IDateTime dateTime) : base(options)
@@ -26,9 +25,7 @@ public class ApplicationDbContext : DbContext
         _dateTime = dateTime;
     }
 
-    public DbSet<TodoList> TodoLists => Set<TodoList>();
-
-    public DbSet<TodoItem> TodoItems => Set<TodoItem>();
+    public DbSet<Feature> Features => Set<Feature>();
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {

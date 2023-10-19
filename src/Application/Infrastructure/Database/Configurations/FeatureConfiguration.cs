@@ -5,14 +5,12 @@ using Sirus.Application.Entities;
 
 namespace Sirus.Application.Infrastructure.Database.Configurations;
 
-public class TodoItemConfiguration : IEntityTypeConfiguration<TodoItem>
+public class FeatureConfiguration : IEntityTypeConfiguration<Feature>
 {
-    public void Configure(EntityTypeBuilder<TodoItem> builder)
+    public void Configure(EntityTypeBuilder<Feature> builder)
     {
         builder.Ignore(e => e.DomainEvents);
 
-        builder.Property(t => t.Title)
-            .HasMaxLength(200)
-            .IsRequired();
+        // add builder.Property configuration here
     }
 }

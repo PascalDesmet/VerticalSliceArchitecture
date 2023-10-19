@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using Sirus.Application.Common;
 using Sirus.Application.Entities;
-using Sirus.Application.Infrastructure.Persistence;
+using Sirus.Application.Infrastructure.Database;
 
 namespace Sirus.Application.Features.TodoItems;
 

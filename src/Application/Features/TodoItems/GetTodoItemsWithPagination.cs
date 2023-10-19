@@ -11,7 +11,7 @@ using Sirus.Application.Common;
 using Sirus.Application.Common.Mappings;
 using Sirus.Application.Common.Models;
 using Sirus.Application.Entities;
-using Sirus.Application.Infrastructure.Persistence;
+using Sirus.Application.Infrastructure.Database;
 
 namespace Sirus.Application.Features.TodoItems;
 

@@ -1,7 +1,7 @@
 ﻿using Sirus.Application.Entities;
 using Sirus.Application.ValueObjects;
 
-namespace Sirus.Application.Infrastructure.Persistence;
+namespace Sirus.Application.Infrastructure.Database;
 
 public static class ApplicationDbContextSeed
 {

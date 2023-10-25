@@ -99,6 +99,33 @@ namespace VerticalSliceArchitecture.Application.Infrastructure.Persistence.Migra
                     b.ToTable("TodoLists");
                 });
 
+            modelBuilder.Entity("VerticalSliceArchitecture.Applicatoin.Entities.CreateObjectInError", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                b.Property<DateTime>("Created")
+                    .HasColumnType("datetime2");
+
+                b.Property<string>("CreatedBy")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<DateTime?>("LastModified")
+                    .HasColumnType("datetime2");
+
+                b.Property<string>("LastModifiedBy")
+                    .HasColumnType("nvarchar(max)");
+
+                b.Property<string>("SomeValue")
+                    .IsRequired()
+                    .HasMaxLength(200)
+                    .HasColumnType("nvarchar(200)");
+
+                b.HasKey("Id");
+            });
+
             modelBuilder.Entity("VerticalSliceArchitecture.Application.Entities.TodoItem", b =>
                 {
                     b.HasOne("VerticalSliceArchitecture.Application.Entities.TodoList", "List")
